@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位練習01</title>
+    <style>
+        div {
+            border: 1px solid coral;
+            background-color: bisque;
+            
+        }
+
+        #d1 {
+            color: yellow;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        #d2 {
+            position: relative;
+            left:100px;
+            top:-10px; 
+            text-shadow: 2px 2px 5px red;
+            
+        }
+
+        #d3 {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            height: 1000px;
+            writing-mode: vertical-rl;
+        }
+
+        #d4 {
+            position:fixed;
+            
+            right: -50px;
+            bottom: 0px;
+            color: blue;
+        }
+
+        #d4:hover{
+            right: 0px;
+            animation-name: oxox;
+            animation-duration:1s;
+        }
+
+        @keyframes  oxox{
+            from{
+                right:-50px;
+            }
+            to{
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">Border around text!</div>
+    <div id="d2">Text Effect Test - Shadow</div>
+    <div id="d3">33333</div>
+    <div id="d4">
+        選單:
+        <ul>
+            <li>選項一</li>
+            <li>選項二</li>
+            <li>選項三</li>
+        </ul>
+    </div>
+    <h1 id="header">標題內容</h1>
+</body>
+</html>
