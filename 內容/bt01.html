@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 練習 01</title>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="popper.url"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="pic3.jpg" width="100" class="navbar-brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">第一頁</a>
+                </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">第二頁</a>
+                </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">第三頁</a>
+                </li>
+            </div>
+            </nav>
+            <h1>標題文字</h1>
+            <p>段落文字...段落文字...段落文字...段落文字...段落文字...
+            段落文字...段落文字...段落文字...段落文字...段落文字...
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <img src="pic3.jpg" class="img-fluid">
+                段落文字...段落文字...段落文字...段落文字...段落文字...
+                段落文字...段落文字...段落文字...段落文字...段落文字...</div>
+            <div class="col-md-4 col-sm-6">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>欄位一</th>
+                            <th>欄位二</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-1</td>
+                            <td>1-2</td>
+                        </tr>
+                        <tr>
+                            <td>2-1</td>
+                            <td>2-2</td>
+                        </tr>
+                        <tr>
+                            <td>1-1</td>
+                            <td>1-2</td>
+                        </tr>
+                        <tr>
+                            <td>2-1</td>
+                            <td>2-2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                <div class="mb-3">
+                    <label for="nickname" class="form-label">暱稱: </label>
+                    <input type="text" class="form-control" id="nickname" name="nickname"> 
+                </div>
+                <div class="form-check form-switch">
+                    <label for="power" class="form-check-label">啟用:</label>
+                    <input type="checkbox" id="power" class="form-check-input">
+                </div>
+            </form>
+            <button  class="btn btn-primary" title="按鈕提示內容..." data-bs-toggle="tooltip"
+            data-bs-placement="top" >按鈕一</button>
+            <button class="btn btn-link">按鈕二</button>
+            <button class="btn btn-outline-danger">按鈕三</button>
+            </div>
+            <div class="col-md-4 col-sm-12">4</div>
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)})
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -13,3 +13,5 @@ A、F : 寬度修整為內容寬度
 
 Float => 浮動效果，隨著視窗大小調整內容編排
 解Float效果 => 直接加在想解除的物件上
+
+可參考網站 BootStrap應用：https://getbootstrap.com/docs/4.0/content/images/
